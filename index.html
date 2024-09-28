@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -64,9 +65,9 @@
 
     <div class="numbers">
         <nav class="numbers-nav">
-            <a>10 ELŐADÁS</a>
-            <a>8+ ELŐADÓ</a>
-            <a>1 WORKSHOP</a>
+            <a href="#"><span class="counter" data-target="10">0</span>+  előadás</a>
+            <a href="#"><span class="counter" data-target="100">0</span>+ résztvevő</a>
+            <a href="#"><span class="counter" data-target="30">0</span>+ program</a>
 
         </nav>
 
@@ -76,20 +77,13 @@
 
 
 
+
   
 
-    <img src="svg/botton-linear.svg" class="bottom-linear" alt="Bottom Linear">
-    <script>
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('.header');
-            if (window.scrollY > 50) { // Ha az oldal le van görgetve 50px-nél többet
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+    
+    <button onclick="topFunction()" id="myBtn" ></button>
 
+    
 
    
 
