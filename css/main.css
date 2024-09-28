@@ -251,12 +251,11 @@ body {
     background-color: #CAD748; /* Háttérszín beállítása */
     padding: 30px 0; /* Padding a téglalap méretéhez */
     border-radius: 5px; /* Lekerekített sarkok */
-    transition: background-color 0.3s; /* Áttűnés a háttérszín változásakor */
+    transition: background-color 0.3s, color 0.3s; /* Áttűnés a háttérszín és szöveg szín változásakor */
     text-align: center; /* Szöveg középre igazítása */
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .numbers-nav a:hover {
@@ -264,12 +263,19 @@ body {
     color: #CAD748;
 }
 
+.numbers-nav a:hover .counter {
+    color: #CAD748; /* Számláló színe hover állapotban */
+}
+
 .counter {
     font-size: 35px;
     font-weight: bold;
-    color: #d62477; /* Számláló színe */
+    color: #53519E; /* Számláló színe */
 }
 
+
+
+/* --------------------------- TETEJERE VIVO GOMB --------------------------- */
 /* Vissza a tetejére gomb stílusai */
 #myBtn {
     display: none; /* Alapértelmezés szerint rejtve */
