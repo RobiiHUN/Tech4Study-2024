@@ -14,10 +14,20 @@
 
 /* --------------------------- ITT KEZDŐDIK A CSS --------------------------- */
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 300vh;
+
+}
 
 
 body {
     background-color: var(--background-color);
+    position: relative;
     
 }
 
@@ -35,13 +45,13 @@ body {
 
 
 .bottom-linear {
-    position: absolute;
+    position: absolute; /* Fix pozíció a böngészőablak alján */
     bottom: 0;
     left: 0;
     width: 100%;
     height: auto;
+    
 }
-
 
 
 /* ------------------------------ FEJLÉC-DOBOZ ------------------------------ */
@@ -80,25 +90,25 @@ body {
 
 .top-left-circle {
     position: absolute;
-    top: 20%; 
+    top: 200px; 
     right: 0;
-    width: 30%; 
+    width: 40%; 
     height: auto;
 }
 
 .top-left-hand{
     position: absolute;
-    top: 30%; 
+    top: 170px; 
     right: 0;
-    width: 45%; 
+    width: 55%; 
     height: auto;
 }
 
-/* ----------------------------- TARTALOM-DOBOZ ----------------------------- */
+/* ------------------------------ CÍM ÉS ALCIM ------------------------------ */
 
 .headline {
     position: absolute;
-    top: 20%; /* 20%-kal lentebb az oldal tetejétől */
+    top: 150px; /* 20%-kal lentebb az oldal tetejétől */
     left: 2%;
     width: 60%; /* Állítsd be a kívánt szélességet */
     height: auto;
@@ -115,7 +125,7 @@ body {
 
 .secondary{
     position: absolute;
-    top: 64%; 
+    top: 500px; 
     left: 2%;
     width: 40%; 
     height: auto;
@@ -128,4 +138,67 @@ body {
     font-size: 30px;
     font-weight: semi-bold;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------- ROLUNK RESZ ------------------------------ */
+
+.about-us{
+    position: absolute;
+    top: 700px; 
+    width: 100%; 
+    height: 600px;
+    display: flex; 
+    justify-content: center; 
+    
+}
+
+.about-us-pics{
+    width: 40%; 
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: -50px;
+    
+    
+}
+
+.about-us-pics img{
+    width: 70%;
+    height: auto;
+    
+}
+
+.about-us-text{
+    width: 60%;
+    height: 100%;
+    margin-left: 50px;
+    
+}
+
+.about-headline{
+    text-decoration: none;
+    color: #53519E;
+    margin-top: -20px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-text{
+    text-decoration: none;
+    color: #53519E;
+    font-size: 25px;
+    font-weight:normal;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 150px;
+}
+
+/* ---------------------------- JOBB OLDALI KOROK --------------------------- */
+.bottom-right-circle {
+    position: absolute;
+    top: 1300px; 
+    left: 0;
+    width: 35%; 
+    height: auto;
 }
