@@ -76,7 +76,7 @@ body {
     
 }
 
-/* ---------------------------- JOBB OLDALI KOROK --------------------------- */
+/* ---------------------------- JOBB OLDALI DOLGOK --------------------------- */
 
 .top-left-circle {
     position: absolute;
@@ -86,4 +86,46 @@ body {
     height: auto;
 }
 
+.top-left-hand{
+    position: absolute;
+    top: 30%; 
+    right: 0;
+    width: 45%; 
+    height: auto;
+}
+
 /* ----------------------------- TARTALOM-DOBOZ ----------------------------- */
+
+.headline {
+    position: absolute;
+    top: 20%; /* 20%-kal lentebb az oldal tetejétől */
+    left: 2%;
+    width: 60%; /* Állítsd be a kívánt szélességet */
+    height: auto;
+    padding: 20px;
+}
+
+.headline p{
+    text-decoration: none;
+    color: #53519E;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.secondary{
+    position: absolute;
+    top: 64%; 
+    left: 2%;
+    width: 40%; 
+    height: auto;
+    padding: 20px;
+}
+
+.secondary p{
+    text-decoration: none;
+    color: #53519E;
+    font-size: 30px;
+    font-weight: semi-bold;
+    font-family: 'Montserrat', sans-serif;
+}
