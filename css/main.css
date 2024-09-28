@@ -58,6 +58,18 @@ body {
 .header {
     width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Alapértelmezett átlátszó háttér */
+    transition: background-color 0.3s; /* Áttűnés a háttérszín változásakor */
+    z-index: 1000; /* Biztosítja, hogy a header mindig a tartalom felett legyen */
+    
+}
+
+.header.scrolled {
+    background-color: white; /* Háttérszín változtatása görgetéskor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Árnyék hozzáadása */
 }
 
 
@@ -67,6 +79,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    
 }
 
 .menu a {
@@ -102,7 +115,20 @@ body {
     right: 0;
     width: 55%; 
     height: auto;
+    animation: slideInFromRight 1s ease-in;
 }
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 /* ------------------------------ CÍM ÉS ALCIM ------------------------------ */
 
@@ -201,4 +227,47 @@ body {
     left: 0;
     width: 35%; 
     height: auto;
+}
+
+/* --------------------------------- SZAMOK --------------------------------- */
+.numbers{
+    position: absolute;
+    top: 1250px; 
+    width: 100%; 
+    height: 150px;
+    display: flex; 
+    justify-content: center; 
+}
+
+.numbers-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+ 
+}
+
+.numbers-nav a {
+    flex: 1; /* Egyenlő arányban osztoznak a rendelkezésre álló helyen */
+    margin: 0 80px; /* Margin a téglalapok között */
+    text-decoration: none;
+    color: #53519E;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CAD748; /* Háttérszín beállítása */
+    padding: 30px 0; /* Padding a téglalap méretéhez */
+    border-radius: 5px; /* Lekerekített sarkok */
+    transition: background-color 0.3s; /* Áttűnés a háttérszín változásakor */
+    text-align: center; /* Szöveg középre igazítása */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.numbers-nav a:hover {
+    background-color: #53519E; /* Háttérszín változtatása hover állapotban */
+    color: #CAD748;
 }

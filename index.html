@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
     
@@ -61,6 +62,15 @@
     </div>
 
 
+    <div class="numbers">
+        <nav class="numbers-nav">
+            <a>10 ELŐADÁS</a>
+            <a>8+ ELŐADÓ</a>
+            <a>1 WORKSHOP</a>
+
+        </nav>
+
+    </div>
 
 
 
@@ -69,6 +79,16 @@
   
 
     <img src="svg/botton-linear.svg" class="bottom-linear" alt="Bottom Linear">
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) { // Ha az oldal le van görgetve 50px-nél többet
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 
    
