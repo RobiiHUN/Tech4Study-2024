@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* --------------------------------- SZÍNEK --------------------------------- */
+
+:root{
+    /* Háttérszín */
+    --background-color: white;
+
+
+}
+
+
+
+
+/* --------------------------- ITT KEZDŐDIK A CSS --------------------------- */
+
+
+
+body {
+    background-color: var(--background-color);
+    
+}
+
+/* -------------------------- ALSÓ-FELSŐ ATMENETEK -------------------------- */
+
+.top-linear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+
+
+.bottom-linear {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ------------------------------ FEJLÉC-DOBOZ ------------------------------ */
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu a {
+    margin: 0 4%;
+    text-decoration: none;
+    color: #53519E;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.menu img{
+    width: 10%;
+    height: auto;
+    margin-right: 10%;
+    
+}
+
+/* ---------------------------- JOBB OLDALI KOROK --------------------------- */
+
+.top-left-circle {
+    position: absolute;
+    top: 20%; 
+    right: 0;
+    width: 30%; 
+    height: auto;
+}
+
+/* ----------------------------- TARTALOM-DOBOZ ----------------------------- */
