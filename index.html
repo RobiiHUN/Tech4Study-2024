@@ -11,49 +11,35 @@
 
 </head>
 <body>
-
+    <div class="header">
+        
+        <div class="header-content">
     
- 
-    
-    
-  
-       
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="menu">
+                <img src="svg/logo.svg" class="logo" alt="Logo">
+            <nav>
+                <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="#">FŐOLDAL</a></li>
+                <li><a href="#">RÓLUNK</a></li>
+                <li><a href="#">PROGRAMOK</a></li>
+                <li><a href="#">REGISZTRÁCIÓ</a></li>
+                
+                </ul>
+                <ul>
+                
+                <li class="hideOnMobile"><a href="#">FŐOLDAL</a></li>
+                <li class="hideOnMobile"><a href="#">RÓLUNK</a></li>
+                <li class="hideOnMobile"><a href="#">PROGRAMOK</a></li>
+                <li class="hideOnMobile"><a href="#">REGISZTRÁCIÓ</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                </ul>
+                
+            </nav>
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <a class="navbar-brand" href="#">
-                <img src="svg/logo.svg" alt="Logo" style="width: 100px;">
-            </a>
-            
-            
-             <div class="header-content">
-                <div class="collapse navbar-collapse" id="navbarNav">
-
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">FŐOLDAL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">RÓLUNK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">PROGRAMOK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">REGISZTRÁCIÓ</a>
-                        </li>
-            
-            
-                    <nav class="menu">
-                        
-                        
-                    </nav>
-                </div>
             </div>
-        </nav>
+        </div>
+    </div>
     
 
     <img src="svg/top-left-circle.svg" class="top-left-circle" alt="Top Left Circle">

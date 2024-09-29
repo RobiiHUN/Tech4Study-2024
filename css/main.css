@@ -56,42 +56,116 @@ body {
 
 
 /* ------------------------------ FEJLÉC-DOBOZ ------------------------------ */
-.navbar-nav .nav-link {
-    color: #CAD748 !important;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    transition: color 0.3s;
-    background-color: #53519E;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 0 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-   
-    
-}
-
-.navbar-nav .nav-link:hover {
-    color: #53519E !important;
-    background-color: #CAD748;
-}
-
 
 
 .header-content {
-    position: absolute;
-    top: 10%;
-    right:  3%;
-    width: 600px;
-    
-    text-align: center;
-   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 40%;
+}
+
+.hideOnMobile {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Menüpontok jobbra igazítása */
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+    width: 100%;
+}
+
+nav li {
+    height: 50px;
+    margin-right: 20px; /* Egyenletes margó a menüpontok között */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #CAD748;
+    background-color: #53519E;
+    transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #CAD748;
+    color: #53519E;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
 
 /* ---------------------------- JOBB OLDALI DOLGOK --------------------------- */
 
