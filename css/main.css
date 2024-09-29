@@ -110,7 +110,7 @@ nav li {
 
 nav a {
     height: 100%;
-    padding: 0 30px;
+    padding: 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -165,24 +165,45 @@ nav a:hover {
     .menu-button {
         display: block;
         
-        
     }
     .sidebar li{
         
-        padding: 3vw 2vw;
+        padding: 5vw 5vw;
     }
     .sidebar a{
         align-items: center;
         justify-content: center;
-        padding: 3vw 2vw;
+        padding: 5vw 5vw;
+        
     }
-    
+    .header-content{
+        width: 100%;
+        height: 18vw;
+    }
+    nav a{
+        padding: 5vw 5vw;
+        
+    }
 }
 
 @media (max-width: 400px) {
     .sidebar {
         width: 100%;
     }
+    .top-left-hand {
+        top: 80px;
+        right: 0px; /* Igazítás a képernyő szélére */
+        width: 55%; 
+        height: auto;
+    }
+
+    .top-left-circle {
+        top: 200px;
+        right: 0px; /* Igazítás a képernyő szélére */
+        width: 40%; 
+        height: auto;
+    }
+
 }
 
 /* ---------------------------- JOBB OLDALI DOLGOK --------------------------- */
@@ -205,7 +226,6 @@ nav a:hover {
 }
 
 @media (max-width: 800px) {
-    
     .top-left-hand {
         top: 80px;
         right: 0px;
@@ -321,18 +341,14 @@ nav a:hover {
 @media (max-width: 800px) {
     .countdown{
         width: 100%;
-        left: -10px;
+        left: -15px;
         height: auto;
-        top: 310px;
+        top: 84vw;
         text-align: center;
-
-        
-        
-        
     }
     
     .launch-time div p{
-        font-size: 10vw;
+        font-size: 9vw;
     }
     .launch-time div span{
         font-size: 2vw;
@@ -353,6 +369,7 @@ nav a:hover {
     height: 600px;
     display: flex; 
     justify-content: center; 
+    
     
     
 }
@@ -432,6 +449,7 @@ nav a:hover {
         font-size: 5vw;
         width: 100%;
         text-align: center;
+        padding-left: 3%;
     }
 }
 @media (min-width: 800px) {
@@ -513,7 +531,7 @@ nav a:hover {
     }
     .numbers{
         width: 100%;
-        top: 1500px;
+        top: 380vw;
         
 
     }
