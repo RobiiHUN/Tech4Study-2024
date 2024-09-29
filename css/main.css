@@ -203,6 +203,18 @@ nav a:hover {
     
 }
 
+@media (max-width: 800px) {
+    
+    .top-left-hand {
+        top: 100px;
+        right: -100px;
+    }
+    .top-left-circle {
+        top: 200px;
+        right: -100px;
+    }
+}
+
 
 
 /* ------------------------------ CÍM ÉS ALCIM ------------------------------ */
@@ -246,6 +258,10 @@ nav a:hover {
     }
     .headline {
         height: 80vw;
+    }
+    .body{
+        
+        top: 80px;
     }
 }
 
@@ -297,6 +313,8 @@ nav a:hover {
 @media (max-width: 800px) {
     .countdown{
         width: 100%;
+        
+        left: 0;
         
         
         
@@ -403,7 +421,7 @@ nav a:hover {
         text-align: center;
     }
     .about-text{
-        font-size: 4vw;
+        font-size: 5vw;
         width: 100%;
         text-align: center;
     }
@@ -487,7 +505,7 @@ nav a:hover {
     }
     .numbers{
         width: 100%;
-        top: 1350px;
+        top: 1500px;
         
 
     }
