@@ -209,14 +209,14 @@ nav a:hover {
 .headline p{
     text-decoration: none;
     color: #53519E;
-    font-size: 80px;
+    font-size: 6vw;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 
 .secondary{
     position: absolute;
-    top: 500px; 
+    top: 550px; 
     left: 2%;
     width: 40%; 
     height: auto;
@@ -226,7 +226,7 @@ nav a:hover {
 .secondary p{
     text-decoration: none;
     color: #53519E;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: semi-bold;
     font-family: 'Montserrat', sans-serif;
 }
@@ -400,7 +400,7 @@ nav a:hover {
 .launch-time div p{
     text-decoration: none;
     color: #53519E;
-    font-size: 75px;
+    font-size: 5vw;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -410,7 +410,7 @@ nav a:hover {
 .launch-time div span{
     text-decoration: none;
     color: #53519E;
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
