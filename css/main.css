@@ -537,4 +537,22 @@ nav a:hover {
 }
 
 
+/* -------------------------------- SCROLLBAR ------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CAD748;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #53519E;
+}
 
