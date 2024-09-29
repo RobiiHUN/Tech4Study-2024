@@ -166,6 +166,16 @@ nav a:hover {
         
         
     }
+    .sidebar li{
+        
+        padding: 3vw 2vw;
+    }
+    .sidebar a{
+        align-items: center;
+        justify-content: center;
+        padding: 3vw 2vw;
+    }
+    
 }
 
 @media (max-width: 400px) {
@@ -386,10 +396,11 @@ nav a:hover {
 .numbers{
     position: absolute;
     padding-top: 50px;
-    width: 150%; 
+    width: 155%; 
     height: 150px;
     display: flex; 
     justify-content: center; 
+    
 }
 
 .numbers-nav{
@@ -398,6 +409,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    
  
 }
 
@@ -417,6 +429,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .numbers-nav a:hover {
@@ -432,7 +445,35 @@ nav a:hover {
     font-size: 2vw;
     font-weight: bold;
     color: #53519E; /* Számláló színe */
+    
 
+}
+
+@media (max-width: 800px) {         
+    .numbers-nav {
+        flex-direction: column;
+        
+    }
+    .numbers{
+        width: 150%;
+        top: 1400px;
+
+    }
+    .numbers-nav a {
+        margin: 20px 20px;
+        font-size: 4vw;
+        padding: 2vw 3vw;
+        
+   
+
+    }
+    .numbers-nav span{
+        font-size: 1vw;
+        margin: 0 0;
+        font-size: 4vw;
+        padding: 0;
+    }
+ 
 }
 
 
