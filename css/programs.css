@@ -1,0 +1,44 @@
+.programs{
+    width: 101vw; 
+    height: 400vw;
+    margin-top: 500px;
+    margin-left: -9%;
+    background-color: #ebebeb;
+}
+
+@media (max-width: 800px) {
+    .programs{
+        width: 110.3vw;
+        top:1650px;
+        position: absolute;
+
+        
+        
+    }
+}
+
+.line {
+    position: absolute; /* Relatív pozíció beállítása a szülő elemre */
+    height: 0;
+    z-index: -1;
+    
+}
+
+.line svg{
+    width: 101vw;
+    height: auto;
+    position: absolute; /* Abszolút pozíció beállítása az SVG-kre */
+    bottom: 0; /* Az SVG-k a doboz tetején helyezkednek el */
+}
+
+#line1{
+    visibility: hidden;
+}
+
+@media (max-width: 800px) {
+    .line svg{
+        width: 110.3vw;
+
+        
+    }
+}

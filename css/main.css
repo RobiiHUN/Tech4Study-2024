@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('animation.css');
+@import url('programs.css');
 
 /* --------------------------------- SZÍNEK --------------------------------- */
 
@@ -216,12 +217,23 @@ nav a:hover {
 
 /* ---------------------------- JOBB OLDALI DOLGOK --------------------------- */
 
-.top-left-circle {
+.circles {
     position: absolute;
-    top: 200px; 
-    right: 0;
-    width: 40%; 
+    z-index: -10;
+    width: 100%;
     height: auto;
+    justify-content: right;
+    display: flex;
+    border-right: -100px;
+    
+}
+
+@media (max-width: 800px) {
+    .circles{
+        width: 70%;
+        left: 120px;
+        top: -280px;
+    }
 }
 
 .top-left-hand{
@@ -494,7 +506,7 @@ nav a:hover {
 /* ---------------------------- JOBB OLDALI KOROK --------------------------- */
 .bottom-right-circle {
     position: absolute;
-    top: 1300px; 
+    top: 1000px; 
     left: 0;
     width: 35%; 
     height: auto;

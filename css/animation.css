@@ -21,21 +21,3 @@
 }
 
 
-.circles {
-    position: absolute;
-    z-index: -10;
-    width: 100%;
-    height: auto;
-    justify-content: right;
-    display: flex;
-    border-right: -100px;
-    
-}
-
-@media (max-width: 800px) {
-    .circles{
-        width: 70%;
-        left: 120px;
-        top: -280px;
-    }
-}

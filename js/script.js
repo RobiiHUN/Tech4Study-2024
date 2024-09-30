@@ -1,3 +1,5 @@
+
+
 window.addEventListener('scroll', function() {
     var header = document.querySelector('.header');
     if (window.scrollY > 50) { // Ha az oldal le van görgetve 50px-nél többet
@@ -101,5 +103,7 @@ var x = setInterval(function() {
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
     
-    }, 1000);
+}, 1000);
+
+
 
