@@ -21,3 +21,13 @@
 }
 
 
+.circles {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: auto;
+    justify-content: right;
+    display: flex;
+    border-right: -100px;
+    
+}
