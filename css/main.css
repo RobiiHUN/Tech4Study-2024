@@ -16,6 +16,20 @@
 
 /* --------------------------- ITT KEZDŐDIK A CSS --------------------------- */
 
+
+/* ----------------------------- ALAP BEÁLLÍTÁSOK ---------------------------- */
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth görgetés beállítása */
+}
+
+* {
+    box-sizing: border-box; /* A padding és a border ne növelje a doboz méretét */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Betűtípus beállítása */
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -23,6 +37,8 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 450vh;
+   
+    
 
 }
 
