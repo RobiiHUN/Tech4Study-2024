@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <header>
 
         <div class="header-content">
 
@@ -22,11 +22,15 @@
                 <img src="svg/logo.svg" class="logo" alt="Logo">
                 <nav>
                     <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        <li onclick=hideSidebar()>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26"
                                     viewBox="0 96 960 960" width="26">
                                     <path
                                         d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                                </svg></a></li>
+                                </svg>
+                            </a>
+                        </li>
                         <li><a href="#">FŐOLDAL</a></li>
                         <li><a href="#">RÓLUNK</a></li>
                         <li><a href="#">PROGRAMOK</a></li>
@@ -49,7 +53,7 @@
 
             </div>
         </div>
-    </div>
+    </header>
 
     <div class="circles">
         <svg id="visual" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg"
@@ -144,12 +148,12 @@
         </div>
 
         <div class="numbers">
-            <nav class="numbers-nav">
+            <div class="numbers-nav">
                 <a href="#"><span class="counter" data-target="10">0</span>+ előadás</a>
                 <a href="#"><span class="counter" data-target="100">0</span>+ résztvevő</a>
                 <a href="#"><span class="counter" data-target="30">0</span>+ program</a>
 
-            </nav>
+            </div>
 
         </div>
 
