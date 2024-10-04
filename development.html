@@ -8,13 +8,15 @@
     <title>Tech4Study | Home</title>
   </head>
   <body>
-    <nav>
-      <img src="" alt="" />
-      <ul>
-        <li>Főoldal</li>
-        <li>Rólunk</li>
-        <li>Programok</li>
-        <li>Regisztráció</li>
+    <nav
+      class="flex justify-between px-8 py-4 w-full bg-white bg-opacity-75 backdrop-blur"
+    >
+      <img src="/svg/logo.svg" alt="tech4study logo" class="h-16 w-auto" />
+      <ul class="flex justify-end gap-4">
+        <li><a href="#">Főoldal</a></li>
+        <li><a href="#about">Rólunk</a></li>
+        <li><a href="#program">Programok</a></li>
+        <li><a href="#reg">Regisztráció</a></li>
       </ul>
     </nav>
     <header>
@@ -29,15 +31,15 @@
       <img src="" alt="" />
     </header>
     <main>
-      <section>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <section id="count-down">
+        <ul id="counter">
+          <li><span id="days"></span><span class="unit">Nap</span></li>
+          <li><span id="hours"></span><span class="unit">Óra</span></li>
+          <li><span id="minutes"></span><span class="unit">Perc</span></li>
+          <li><span id="seconds"></span><span class="unit">Másodperc</span></li>
         </ul>
       </section>
-      <section>
+      <section id="about">
         <h2>Rólunk</h2>
         <img src="" alt="" />
         <p></p>
@@ -48,12 +50,12 @@
           <li></li>
         </ul>
       </section>
-      <section><h2>Programjaink</h2></section>
-      <section>
+      <section id="program"><h2>Programjaink</h2></section>
+      <section id="reg">
         <h2>Regisztráció</h2>
         <form action=""></form>
       </section>
     </main>
-    <footer></footer>
+    <footer id="contact"></footer>
   </body>
 </html>
