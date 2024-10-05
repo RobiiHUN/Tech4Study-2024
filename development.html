@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.0/dist/kute.min.js"></script>
     <title>Tech4Study | Home</title>
   </head>
   <body>
     <nav
-      class="flex justify-between px-8 py-4 w-full bg-white bg-opacity-75 backdrop-blur"
+      class="top-0 shadow flex justify-between px-8 py-4 w-full bg-white bg-opacity-5 backdrop-blur fixed z-10"
     >
-      <img src="/svg/logo.svg" alt="tech4study logo" class="h-16 w-auto" />
-      <ul class="flex items-center justify-end gap-4">
+      <img
+        src="/svg/logo.svg"
+        alt="tech4study logo"
+        class="h-12 w-auto place-self-center"
+      />
+      <ul class="hidden md:flex items-center justify-end md:gap-2 lg:gap-4">
         <li
           class="rounded-2xl bg-secondary hover:bg-primary hover:text-secondary transition-colors duration-300 text-primary flex items-center p-4 text-center font-bold uppercase"
         >
@@ -34,17 +45,78 @@
           <a href="#reg">Regisztráció</a>
         </li>
       </ul>
+      <button
+        class="transition-colors duration-300 group md:hidden p-4 bg-secondary rounded-2xl outline-none hover:bg-primary"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          class="size-8 stroke-primary group-hover:stroke-secondary"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
     </nav>
-    <header>
+    <header
+      class="md:p-16 px-8 py-16 mt-24 flex justify-between relative overflow-x-clip"
+    >
       <div>
-        <h2>2024 november 7.</h2>
-        <h1>
+        <h2 class="uppercase text-2xl">2024 november 7.<br />8:00-16:00</h2>
+        <h1 class="text-[4.5rem] font-bold uppercase leading-tight">
           <span class="roman-numbers">II</span>. Technológiai Intelligencia
           Konferencia
         </h1>
-        <h3>oktatás, fejlesztés, tudásbázis</h3>
+        <h3 class="uppercase text-2xl">oktatás, fejlesztés, tudásbázis</h3>
       </div>
-      <img src="" alt="" />
+      <img src="/svg/kez.svg" alt="Robot kez" class="absolute right-0 w-3/5" />
+      <div
+        class="flex circles absolute right-0 md:-right-8 lg:-right-24 -top-24 -z-10 w-full md:w-4/5 h-auto"
+      >
+        <svg
+          id="visual"
+          viewBox="0 0 900 900"
+          width="900"
+          height="900"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <g transform="translate(487.5565330354138 511.6452152336784)">
+            <path
+              id="blob0"
+              d="M165.7 -248.9C204.1 -200.2 217.1 -137.5 234.6 -77.7C252 -17.8 273.9 39.1 257.6 81.9C241.3 124.7 186.8 153.4 137.5 177.7C88.2 202 44.1 222 -6.7 231.2C-57.4 240.3 -114.8 238.7 -153.8 211C-192.8 183.4 -213.4 129.7 -248.4 69.5C-283.4 9.3 -332.9 -57.5 -338 -130.8C-343.1 -204.2 -303.8 -284.1 -240.1 -324.6C-176.3 -365 -88.2 -366 -12.2 -349.2C63.7 -332.3 127.4 -297.6 165.7 -248.9"
+              fill="none"
+              stroke="#CAD748"
+              stroke-width="2"
+            ></path>
+          </g>
+
+          <g transform="translate(451.863080088943 455.9212567090575)">
+            <path
+              id="blob1"
+              d="M137.4 -214.7C183.8 -155.3 231.2 -122.9 259.7 -75C288.2 -27.1 297.7 36.4 285.6 98.8C273.6 161.2 239.9 222.6 188.7 265.9C137.5 309.3 68.8 334.7 -9.7 348C-88.2 361.4 -176.3 362.7 -212 314.3C-247.7 265.9 -230.8 167.7 -244.3 88.3C-257.7 9 -301.5 -51.6 -293.5 -101.4C-285.6 -151.1 -226 -190 -168.4 -245.8C-110.9 -301.6 -55.4 -374.3 -5 -367.4C45.5 -360.6 90.9 -274.1 137.4 -214.7"
+              fill="none"
+              stroke="#CAD748"
+              stroke-width="1"
+            ></path>
+          </g>
+
+          <g transform="translate(416.6041791584533 445.3784297309104)">
+            <path
+              id="blob2"
+              d="M199.6 -302.1C251.5 -277.3 281.3 -209.7 305 -143.5C328.8 -77.3 346.5 -12.4 323 35.8C299.5 84 234.8 115.7 193.4 172.8C152.1 230 134.1 312.7 91.8 335.4C49.6 358.2 -16.9 321.1 -78.6 291.9C-140.2 262.7 -197.1 241.4 -228.2 200.5C-259.4 159.6 -264.8 99.2 -266.6 42.4C-268.4 -14.4 -266.5 -67.6 -262.1 -137.2C-257.6 -206.8 -250.4 -292.7 -206.3 -321C-162.2 -349.4 -81.1 -320.2 -3.6 -314.6C73.9 -309 147.8 -326.9 199.6 -302.1"
+              fill="none"
+              stroke="#CAD748"
+              stroke-width="1"
+            ></path>
+          </g>
+        </svg>
+      </div>
     </header>
     <main>
       <section id="count-down">
@@ -56,14 +128,38 @@
         </ul>
       </section>
       <section id="about">
-        <h2>Rólunk</h2>
-        <img src="" alt="" />
-        <p></p>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+        <h2 class="flex-1">Rólunk</h2>
+        <img src="/pics/kep.jpg" alt="Rendezveny kep" />
+        <p>
+          Az esemény célja, hogy létrehozzon egy közösségi platformot az ipar és
+          az oktatás résztvevői számára tapasztalatcserét és együttműködési
+          lehetőséget biztosítva. Az idei konferenciánk továbbra is kiemelt
+          témája a digitális átalakulás és a jövő kihívásai a képzés és a
+          szakképzés, a munkahelyek világában. Hogyan tartsunk lépést a
+          technológiai fejlődéssel és hogyan reagáljunk a változásokra?
+        </p>
+        <p>
+          Konferenciánkon elismert előadóinkkal közösen kutatjuk a választ a
+          jövő kihívásaira.
+        </p>
+        <ul
+          class="flex w-full items-center justify-between md:px-32 px-8 gap-8"
+        >
+          <li
+            class="bg-primary p-4 rounded-2xl flex-[0.25] text-2xl text-center font-bold"
+          >
+            <span class="counter" data-target="10"></span>+ előadó
+          </li>
+          <li
+            class="bg-primary p-4 rounded-2xl flex-[0.25] text-2xl text-center font-bold"
+          >
+            <span class="counter" data-target="100"></span>+ résztvevő
+          </li>
+          <li
+            class="bg-primary p-4 rounded-2xl flex-[0.25] text-2xl text-center font-bold"
+          >
+            <span class="counter" data-target="30"></span>+ program
+          </li>
         </ul>
       </section>
       <section id="program"><h2>Programjaink</h2></section>
@@ -73,5 +169,90 @@
       </section>
     </main>
     <footer id="contact"></footer>
+    <script>
+      function animateBlobs() {
+        const tween = KUTE.fromTo(
+          "#blob0",
+          {
+            path: "#blob0",
+          },
+          {
+            path: "#blob1",
+          },
+          {
+            repeat: 1000,
+            duration: 13000,
+            yoyo: true,
+          }
+        );
+        tween.start();
+
+        const tween2 = KUTE.fromTo(
+          "#blob1",
+          {
+            path: "#blob1",
+          },
+          {
+            path: "#blob0",
+          },
+          {
+            repeat: 1000,
+            duration: 13000,
+            yoyo: true,
+          }
+        );
+        tween2.start();
+
+        const tween3 = KUTE.fromTo(
+          "#blob2",
+          {
+            path: "#blob2",
+          },
+          {
+            path: "#blob1",
+          },
+          {
+            repeat: 1000,
+            duration: 13000,
+            yoyo: true,
+          }
+        );
+        tween3.start();
+
+        const line_prog = KUTE.fromTo(
+          "#line0",
+          {
+            path: "#line0",
+          },
+          {
+            path: "#line1",
+          },
+          {
+            repeat: 1000,
+            duration: 8000,
+            yoyo: true,
+          }
+        );
+        line_prog.start();
+
+        const line_prog2 = KUTE.fromTo(
+          "#line2",
+          {
+            path: "#line2",
+          },
+          {
+            path: "#line3",
+          },
+          {
+            repeat: 1000,
+            duration: 8000,
+            yoyo: true,
+          }
+        );
+        line_prog2.start();
+      }
+
+      animateBlobs();
+    </script>
   </body>
 </html>
