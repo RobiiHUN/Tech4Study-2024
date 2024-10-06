@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav
-      class="top-0 shadow flex justify-between px-8 py-4 w-full bg-white bg-opacity-5 backdrop-blur fixed z-10"
+      class="top-0 shadow flex justify-between px-8 py-4 w-full bg-white bg-opacity-5 backdrop-blur fixed z-20"
     >
       <img
         src="/svg/logo.svg"
@@ -24,43 +24,64 @@
         class="h-12 w-auto place-self-center"
       />
       <ul class="hidden md:flex items-center justify-end md:gap-2 lg:gap-4">
-        <li
-          class="rounded-2xl bg-secondary hover:bg-primary hover:text-secondary transition-colors duration-300 text-primary flex items-center p-4 text-center font-bold uppercase"
-        >
+        <li class="navigation-item">
           <a href="#">Főoldal</a>
         </li>
-        <li
-          class="rounded-2xl bg-secondary hover:bg-primary hover:text-secondary transition-colors duration-300 text-primary flex items-center p-4 text-center font-bold uppercase"
-        >
+        <li class="navigation-item">
           <a href="#about">Rólunk</a>
         </li>
-        <li
-          class="rounded-2xl bg-secondary hover:bg-primary hover:text-secondary transition-colors duration-300 text-primary flex items-center p-4 text-center font-bold uppercase"
-        >
+        <li class="navigation-item">
           <a href="#program">Programok</a>
         </li>
-        <li
-          class="rounded-2xl bg-secondary hover:bg-primary hover:text-secondary transition-colors duration-300 text-primary flex items-center p-4 text-center font-bold uppercase"
-        >
+        <li class="navigation-item">
           <a href="#reg">Regisztráció</a>
         </li>
       </ul>
-      <button
-        class="transition-colors duration-300 group md:hidden p-4 bg-secondary rounded-2xl outline-none hover:bg-primary"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          class="size-8 stroke-primary group-hover:stroke-secondary"
+      <div class="md:hidden inline">
+        <button
+          id="menu"
+          class="transition-colors duration-300 group md:hidden p-4 bg-secondary rounded-2xl outline-none hover:bg-primary"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            class="size-8 stroke-primary group-hover:stroke-secondary"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <button
+          id="close"
+          class="transition-colors duration-300 group md:hidden p-4 bg-secondary rounded-2xl outline-none hover:bg-primary"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            class="size-8 stroke-primary group-hover:stroke-secondary"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul
+        id="menu-list"
+        class="fixed z-[-1] left-0 bg-white bg-opacity-75 w-screen h-screen backdrop-blur md:hidden transition-all flex pt-12 px-8 pb-8 flex-col items-center justify-between"
+      >
+        <li class="navigation-item"><a href="#">Főoldal</a></li>
+        <li class="navigation-item"><a href="#about">Rólunk</a></li>
+        <li class="navigation-item"><a href="#program">Programok</a></li>
+        <li class="navigation-item"><a href="#reg">Regisztráció</a></li>
+      </ul>
     </nav>
     <header
       class="md:p-16 px-8 py-16 mt-24 flex justify-between relative overflow-x-clip"
