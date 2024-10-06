@@ -87,12 +87,16 @@
       class="md:p-16 px-8 py-16 mt-24 flex justify-between relative overflow-x-clip"
     >
       <div>
-        <h2 class="uppercase text-2xl">2024 november 7.<br />8:00-16:00</h2>
-        <h1 class="text-[4.5rem] font-bold uppercase leading-tight">
+        <h2 class="uppercase text-xl md:text-2xl">
+          2024 november 7.<br />8:00-16:00
+        </h2>
+        <h1 class="text-4xl md:text-[4.5rem] font-bold uppercase leading-tight">
           <span class="roman-numbers">II</span>. Technológiai Intelligencia
           Konferencia
         </h1>
-        <h3 class="uppercase text-2xl">oktatás, fejlesztés, tudásbázis</h3>
+        <h3 class="uppercase text-xl md:text-2xl">
+          oktatás, fejlesztés, tudásbázis
+        </h3>
       </div>
       <img src="/svg/kez.svg" alt="Robot kez" class="absolute right-0 w-3/5" />
       <div
@@ -150,15 +154,15 @@
       </section>
       <section
         id="about"
-        class="flex items-center justify-center gap-8 md:grid md:grid-cols-2 md:grid-rows-2"
+        class="flex flex-col items-center justify-center gap-8 md:grid md:grid-cols-2 md:grid-rows-2"
       >
         <img
           src="/pics/kep.jpg"
           alt="Rendezveny kep"
-          class="col-start-1 row-start-1 order-2 rounded-2xl"
+          class="md:w-auto w-full sm:w-3/4 h-auto col-start-1 row-start-1 rounded-2xl"
         />
         <div
-          class="flex flex-col gap-8 md:col-start-2 md:row-start-1 order-1 justify-self-start"
+          class="flex flex-col gap-8 md:col-start-2 md:row-start-1 justify-self-start"
         >
           <h2 class="section-title">Rólunk</h2>
           <p>
@@ -175,7 +179,7 @@
           </p>
         </div>
         <ul
-          class="md:row-start-2 md:col-span-2 md:col-start-1 flex w-full items-center justify-between px-8 gap-8"
+          class="flex-wrap md:flex-nowrap md:row-start-2 md:col-span-2 md:col-start-1 flex w-full items-stretch sm:items-center justify-center md:justify-between px-8 gap-8"
         >
           <li
             class="bg-primary p-4 rounded-2xl flex-[0.25] text-2xl text-center font-bold"
