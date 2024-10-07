@@ -811,18 +811,6 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\.\.\/svg\/top-left-circle\.svg\'\)\] {
-  background-image: url('../svg/top-left-circle.svg');
-}
-
-.bg-\[url\(\'\.\.svg\/top-left-circle\.svg\'\)\] {
-  background-image: url('..svg/top-left-circle.svg');
-}
-
-.bg-\[url\(\'svg\/top-left-circle\.svg\'\)\] {
-  background-image: url('svg/top-left-circle.svg');
-}
-
 .bg-\[url\(\'\/svg\/top-left-circle\.svg\'\)\] {
   background-image: url('/svg/top-left-circle.svg');
 }
@@ -1080,6 +1068,10 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #53519e;
+}
+
+.card-title {
+  text-transform: capitalize;
 }
 
 .hover\:bg-primary:hover {
