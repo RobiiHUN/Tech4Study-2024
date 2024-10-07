@@ -815,6 +815,10 @@ video {
   background-image: url('../svg/top-left-circle.svg');
 }
 
+.bg-\[url\(\'\.\.svg\/top-left-circle\.svg\'\)\] {
+  background-image: url('..svg/top-left-circle.svg');
+}
+
 .bg-contain {
   background-size: contain;
 }
