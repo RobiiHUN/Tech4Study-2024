@@ -34,7 +34,11 @@
           <a href="#program">Programok</a>
         </li>
         <li class="navigation-item">
-          <a href="#reg">Regisztráció</a>
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeQ_z5onWZu9pc6OBp4yLbNXJPF1mKLrZXpJMTnZx8eteW0WQ/closedform"
+            >Regisztráció</a
+          >
         </li>
       </ul>
       <div class="md:hidden inline">
@@ -75,18 +79,24 @@
       </div>
       <ul
         id="menu-list"
-        class="fixed z-[-1] left-0 bg-white bg-opacity-75 w-screen h-screen backdrop-blur md:hidden transition-all flex pt-12 px-8 pb-8 flex-col items-center justify-between"
+        class="fixed z-[-1] left-0 bg-white bg-opacity-75 w-screen h-screen backdrop-blur md:hidden transition-all flex pt-12 px-8 pb-8 flex-col items-center justify-center gap-y-8"
       >
         <li class="navigation-item"><a href="#">Főoldal</a></li>
         <li class="navigation-item"><a href="#about">Rólunk</a></li>
         <li class="navigation-item"><a href="#program">Programok</a></li>
-        <li class="navigation-item"><a href="#reg">Regisztráció</a></li>
+        <li class="navigation-item">
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeQ_z5onWZu9pc6OBp4yLbNXJPF1mKLrZXpJMTnZx8eteW0WQ/closedform"
+            >Regisztráció</a
+          >
+        </li>
       </ul>
     </nav>
     <header
       class="md:p-16 px-8 py-16 mt-24 flex justify-between relative overflow-x-clip"
     >
-      <div>
+      <div class="z-10">
         <h2 class="uppercase text-xl md:text-2xl">
           2024 november 7.<br />8:00-16:00
         </h2>
@@ -154,7 +164,7 @@
       </section>
       <section
         id="about"
-        class="flex flex-col items-center justify-center gap-8 md:grid md:grid-cols-2 md:grid-rows-2"
+        class="relative flex flex-col items-center justify-center gap-8 md:grid md:grid-cols-2 md:grid-rows-2"
       >
         <img
           src="/pics/kep.jpg"
@@ -197,14 +207,137 @@
             <span class="counter" data-target="30"></span>+ program
           </li>
         </ul>
+        <div
+          class="rotate-180 z-[-1] -left-1/4 md:-top-4 top-1/3 absolute bg-[url('../svg/top-left-circle.svg')] bg-no-repeat bg-contain w-full md:w-3/5 h-auto aspect-square"
+        ></div>
       </section>
-      <section id="program"><h2>Programjaink</h2></section>
-      <section id="reg">
-        <h2>Regisztráció</h2>
-        <form action=""></form>
+      <section id="program" class="flex">
+        <h2 class="section-title">Programjaink</h2>
+        <div
+          class="flex flex-wrap md:flex-row flex-col items-center justify-center gap-8"
+        >
+          <div class="card">
+            <h3 class="card-title">Regisztáricó</h3>
+            <span class="card-date">8:00-9:00</span>
+            <p class="card-text">
+              Helyszíni regisztráció és a kiállítások megtekintése. Ekkor indul
+              a QUIZ is.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Megnyitó</h3>
+            <span class="card-date">9:00-10:30</span>
+            <p class="card-text">Jágri Ilona - Alapítvány megnyitó<br /></p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Regisztáricó</h3>
+            <span class="card-date">8:00-9:00</span>
+            <p class="card-text">
+              Helyszíni regisztráció és a kiállítások megtekintése. Ekkor indul
+              a QUIZ is.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Regisztáricó</h3>
+            <span class="card-date">8:00-9:00</span>
+            <p class="card-text">
+              Helyszíni regisztráció és a kiállítások megtekintése. Ekkor indul
+              a QUIZ is.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Regisztáricó</h3>
+            <span class="card-date">8:00-9:00</span>
+            <p class="card-text">
+              Helyszíni regisztráció és a kiállítások megtekintése. Ekkor indul
+              a QUIZ is.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Regisztáricó</h3>
+            <span class="card-date">8:00-9:00</span>
+            <p class="card-text">
+              Helyszíni regisztráció és a kiállítások megtekintése. Ekkor indul
+              a QUIZ is.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Regisztáricó</h3>
+            <span class="card-date">8:00-9:00</span>
+            <p class="card-text">
+              Helyszíni regisztráció és a kiállítások megtekintése. Ekkor indul
+              a QUIZ is.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="reg" class="grid place-items-center">
+        <a
+          target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeQ_z5onWZu9pc6OBp4yLbNXJPF1mKLrZXpJMTnZx8eteW0WQ/closedform"
+          class="md:text-4xl text-2xl font-medium rounded-2xl bg-primary text-white hover:bg-secondary shadow-md text-center md:px-12 px-6 py-4 transition-colors"
+          >Regisztráció</a
+        >
       </section>
     </main>
-    <footer id="contact"></footer>
+    <footer
+      id="contact"
+      class="md:px-32 px-4 pb-8 grid grid-cols-3 md:grid-rows-2 grid-rows-4 gap-4"
+    >
+      <p
+        class="col-start-1 col-span-3 text-center md:text-base text-sm md:px-12 place-self-end"
+      >
+        Támogass minket! Lehetőséged nyílik támogatói jegy váltására is! Vedd
+        fel velünk a kapcsolatot az eleqtroom@gmail.com e-mail címen!
+      </p>
+      <ul
+        class="flex flex-row md:flex-col col-start-1 col-span-3 row-start-4 md:col-span-1 md:row-start-2 justify-center gap-4 md:justify-end w-full"
+      >
+        <li>
+          <a href="#">ÁSZF</a>
+        </li>
+        <li>
+          <a href="#">Adatvédelem</a>
+        </li>
+      </ul>
+      <h3
+        class="text-center font-bold row-start-2 col-span-3 md:col-span-1 col-start-1 md:col-start-2 md:place-self-center"
+      >
+        WWW.TECH4STUDY.COM
+      </h3>
+      <ul
+        class="justify-self-end col-start-1 col-span-3 md:col-span-1 md:col-start-3 row-start-3 md:row-start-2 flex flex-row gap-8 items-center justify-center md:justify-end md:items-end w-full"
+      >
+        <li class="w-8 h-8">
+          <a href="#a">
+            <svg
+              class="fill-secondary hover:fill-primary transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="w-8 h-8">
+          <a href="#a">
+            <svg
+              class="fill-secondary hover:fill-primary transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
     <script>
       function animateBlobs() {
         const tween = KUTE.fromTo(
