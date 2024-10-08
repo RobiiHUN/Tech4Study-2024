@@ -811,10 +811,6 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\/svg\/top-left-circle\.svg\'\)\] {
-  background-image: url('/svg/top-left-circle.svg');
-}
-
 .bg-contain {
   background-size: contain;
 }
@@ -1110,6 +1106,10 @@ section {
   margin-top: 1rem;
 }
 
+#top-circle {
+  background-image: url("../svg/top-left-circle.svg");
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(202 215 72 / var(--tw-bg-opacity));
@@ -1280,9 +1280,5 @@ section {
 
   .lg\:gap-4 {
     gap: 1rem;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
   }
 }
