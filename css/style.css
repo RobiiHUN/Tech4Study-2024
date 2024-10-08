@@ -1281,4 +1281,8 @@ section {
   .lg\:gap-4 {
     gap: 1rem;
   }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
 }
