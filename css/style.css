@@ -614,10 +614,6 @@ video {
   z-index: 15;
 }
 
-.z-\[11\] {
-  z-index: 11;
-}
-
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -780,10 +776,6 @@ video {
   row-gap: 2rem;
 }
 
-.place-self-end {
-  place-self: end;
-}
-
 .place-self-center {
   place-self: center;
 }
@@ -798,6 +790,10 @@ video {
 
 .overflow-x-clip {
   overflow-x: clip;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-2xl {
@@ -946,14 +942,14 @@ video {
   color: rgb(202 215 72 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(83 81 158 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -1308,19 +1304,14 @@ section {
     padding-right: 3rem;
   }
 
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:py-16 {
