@@ -586,6 +586,10 @@ video {
   right: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1197,10 +1201,6 @@ section {
 
   .md\:-top-4 {
     top: -1rem;
-  }
-
-  .md\:right-4 {
-    right: 1rem;
   }
 
   .md\:col-span-1 {
