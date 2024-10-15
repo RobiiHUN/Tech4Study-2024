@@ -1223,6 +1223,12 @@ section {
   line-height: 1.5rem;
 }
 
+.event-section-title-mod {
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+}
+
 .event-user-container {
   display: flex;
   justify-content: center;
