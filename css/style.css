@@ -785,6 +785,10 @@ video {
   row-gap: 2rem;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .place-self-center {
   place-self: center;
 }
